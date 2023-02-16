@@ -1,2 +1,2 @@
-script for compiling
+script that generates the assembly code of a C
 
