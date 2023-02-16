@@ -1,2 +1,2 @@
-script dor output printf
+script for sizes
 
