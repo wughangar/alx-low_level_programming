@@ -1,2 +1,2 @@
-script for processing command
+script to compile without saving
 
