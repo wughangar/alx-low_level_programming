@@ -1,2 +1,2 @@
-script for puts to add text
+script dor output printf
 
