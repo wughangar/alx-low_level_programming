@@ -1,2 +1,2 @@
-script for preprocessor
+script for compiling
 
