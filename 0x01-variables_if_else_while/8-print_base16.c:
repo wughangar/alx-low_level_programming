@@ -1,0 +1,14 @@
+se16.c:10:1: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   10 | for (c = '0'; c <= '9'; c++);
+      | ^~~
+8-print_base16.c:11:1: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   11 | {
+      | ^
+8-print_base16.c:16:11: error: expected ‘;’ before ‘}’ token
+   16 | putchar(c)
+      |           ^
+      |           ;
+   17 | }
+      | ~          
+cc1: all warnings being treated as errors
+
