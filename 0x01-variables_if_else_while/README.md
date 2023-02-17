@@ -1,2 +1,2 @@
-script for letters
+print letters except
 
