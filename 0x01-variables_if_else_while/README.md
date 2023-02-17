@@ -1,2 +1,2 @@
-script for n
+assign random number
 
