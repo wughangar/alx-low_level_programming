@@ -1,4 +1,4 @@
-#inclde < stdio.h >
+#include < stdio.h >
 /**
  * main- prints the sentence in stdout
  *
@@ -7,7 +7,7 @@
 int main(void)
 {
 char letter = 'a';
-while (leter <= 'z')
+while (letter <= 'z')
 {
 putchar (letter);
 letter++;
