@@ -1,2 +1,2 @@
-print letters except
+print numbers
 
