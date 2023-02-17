@@ -1,2 +1,2 @@
-number base 16
+possible combinations
 
