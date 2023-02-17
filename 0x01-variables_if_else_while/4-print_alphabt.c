@@ -11,7 +11,7 @@ while (letter <= 'z')
 {
 if (letter != 'e' && letter != 'q')
 {
-putcharr(letter);
+putchar(letter);
 }
 letter++;
 }
