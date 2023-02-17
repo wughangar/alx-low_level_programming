@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main- prints a sentence to stdout
+ * main - prints a sentence inthe stdout
  *
  * Return: Always 0 (success)
  */
@@ -20,12 +20,12 @@ if (n > 0)
 printf("is positive\n");
 }
 else if (n == 0)
-}
+{
 printf("is zero\n");
 }
 else
 {
 printf("is negative\n");
-}   
+}
 return (0);
 }
