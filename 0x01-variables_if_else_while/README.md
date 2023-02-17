@@ -1,1 +1,2 @@
-script to print letters
+script for letters
+
