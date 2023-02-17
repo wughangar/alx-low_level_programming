@@ -1,22 +1,22 @@
 #include <stdio.h>
 /**
- * main- prints the sentence in stdout
+ * main - prints a sentence in stdout
  *
  * Return: Always 0 (success)
  */
 int main(void)
 {
 char letter = 'a';
-char letter2 = 'A'
 while (letter <= 'z')
 {
-putchar (letter);
+putchar(letter);
 letter++;
 }
-while (letter2 <= 'Z')
+letter = 'A';
+while (letter <= 'Z')
 {
-putchar (letter2);
-letter2++
+putchar(letter);
+letter++;
 }
 putchar('\n');
 return (0);
