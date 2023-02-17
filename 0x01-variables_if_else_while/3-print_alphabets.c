@@ -7,16 +7,16 @@
 int main(void)
 {
 char letter = 'a';
+char letter2 = 'A'
 while (letter <= 'z')
 {
 putchar (letter);
 letter++;
 }
-char letter = 'A';
-while (letter <= 'Z')
+while (letter2 <= 'Z')
 {
-putchar (letter);
-letter++
+putchar (letter2);
+letter2++
 }
 putchar('\n');
 return (0);
