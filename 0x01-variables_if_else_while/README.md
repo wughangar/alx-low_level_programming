@@ -1,2 +1,1 @@
-assign random number
-
+script to print letters
