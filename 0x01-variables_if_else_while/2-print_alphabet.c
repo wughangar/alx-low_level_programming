@@ -1,17 +1,20 @@
 #include <stdio.h>
 /**
- * main - prints sentences in stdout
+ * main - prints sentence in stdout
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (succes)
  */
 int main(void)
 {
 char c = 'a';
+}
 while (c <= 'z')
 {
-put char(c);
+putchar(c);
 c++;
 }
-put char ('\n');
-return  (0);
+
+putchar('\n');
+
+return (0);
 }
