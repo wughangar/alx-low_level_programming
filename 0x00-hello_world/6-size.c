@@ -1,18 +1,18 @@
 #include <stdio.h>
+
 /**
- * main-Prints a sentence to stdout
- *
- * Return:Always 0 (success)
+ * main - prints all single digit numbers of base 10 starting from 0,
+ * followed by a new line, using putchar
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-printf("Size of a char: %ld byte(s)\n", sizeof(char));
-printf("Size of an int: %ld byte(s)\n", sizeof(int));
-printf("Size of a long int: %ld byte(s)\n", sizeof(long int));
-printf("Size of a long long int: %ld byte(s)\n", sizeof(long long int));
-printf("Size of a float: %ld byte(s)\n", sizeof(float));
-printf("Size of a double: %ld byte(s)\n", sizeof(double));
-printf("Size of a long double: %ld byte(s)\n", sizeof(long double));
+int n;
 
+for (n = 48; n < 58; n++)
+{
+putchar(n);
+}
+putchar('\n');
 return (0);
 }
