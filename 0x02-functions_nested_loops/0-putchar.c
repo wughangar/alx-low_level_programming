@@ -1,11 +1,21 @@
 #include "main.h"
+
 /**
- * main- preint out in stdout
+ * main - Entry point
  *
- *Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	_putchar("_putchar\n");
+char *str = "love";
+int i;
+
+for (i = 0; str[i] != '\0'; i++)
+{
+_putchar(str[i]);
+}
+
+_putchar('\n');
+
 return (0);
 }
