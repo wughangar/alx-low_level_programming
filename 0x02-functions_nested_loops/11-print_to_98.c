@@ -8,22 +8,18 @@
 void print_to_98(int n)
 {
 	int i;
+	int inc = 1;
 
 	if (n > 98)
 	{
-		return;
+		inc = -1;
 	}	
 
-	for (i = n; i <= 98; ++i)
+
+	for (i = n; i != 98; i += inc)
 	{
-		printf("%d", i);
-
-		if (i < 98)
-		{
-			printf(", ");
-		}
-
+		printf("%d, ", i);
 	}
 
-	_putchar('\n');
+	printf("98\n");
 }
