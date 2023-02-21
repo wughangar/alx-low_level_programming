@@ -13,19 +13,27 @@ void times_table(void)
 	{
 		for (col = 0; col <= 9; ++col)
 		{
-			printf("%-3d", row * col);
+			int value = col * row;
 
-			if (col == 9)
+			if (col == 0)
 			{
-				_putchar('$');
+				printf("%d", value);
 			}
 			else
 			{
-				_putchar(',');
+				printf("%3d", value);
+			}
+
+			if (col == 9)
+			{
+				putchar('$');
+			}
+			else
+			{
+				putchar(',');
 			}
 		}
 
-		_putchar('\n');
+		putchar('\n');
 	}
 }
-
