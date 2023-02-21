@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  * main - prints output
  * 
@@ -10,7 +10,7 @@ int _islower(int c);
 int main(void)
 {
 char c = 'a';
-if (_islower(c))
+if (test_islower(c))
 {
 printf("%c is lowercase\n", c);
 }
