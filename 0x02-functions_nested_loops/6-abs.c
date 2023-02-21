@@ -1,5 +1,5 @@
 #include "main.h"
-#include <math.h>
+#include <stdlib.h>
 
 /** 
  * _abs - compute the absolute value of the specified number
