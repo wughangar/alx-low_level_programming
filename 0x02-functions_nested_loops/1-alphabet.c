@@ -8,6 +8,8 @@ void print_alphabet(void);
 
 int main(void)
 {
+print_alphabet();
+return (0)
 	char letter = 'a';
 
 	while
@@ -18,6 +20,5 @@ int main(void)
 	letter++;
 	}
 _putchar('\n');
-print_alphabet();
 return (0);
 }
