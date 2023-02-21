@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-char *str = "love";
+char *str = "_putchar";
 int i;
 
 for (i = 0; str[i] != '\0'; i++)
