@@ -1,2 +1,2 @@
-reccurent preinting
+Check if c is lower
 
