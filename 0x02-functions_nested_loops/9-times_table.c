@@ -26,14 +26,12 @@ void times_table(void)
 
 			if (col == 9)
 			{
-				putchar('$');
+				putchar('\n');
 			}
 			else
 			{
 				putchar(',');
 			}
 		}
-
-		putchar('\n');
 	}
 }
