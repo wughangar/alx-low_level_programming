@@ -7,5 +7,10 @@
 */
 int _isalpha(int c)
 {
-	return isalpha(c);
+       if (isalpha(c) != 0)
+       {
+	       return (1);
+       }
+
+       return (0);
 }
