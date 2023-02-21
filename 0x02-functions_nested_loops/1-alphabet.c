@@ -1,3 +1,7 @@
+#include "main.h"
+/**
+ * print_alphabet- prints lower case a-z
+ */
 void print_alphabet(void)
 {
 char letter = 'a';
