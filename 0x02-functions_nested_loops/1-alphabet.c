@@ -1,24 +1,13 @@
-#include "main.h"
-/**
- * main - prints outputin stdout
- *
- * Return: Always 0.
- */
-void print_alphabet(void);
-
-int main(void)
+#include <stdio.h>
+void print_alphabet(void)
 {
-print_alphabet();
-return (0);
-	char letter = 'a';
+    char letter = 'a';
 
-	while
-	(letter <= 'z')
+    while (letter <= 'z')
+    {
+        putchar(letter);
+        letter++;
+    }
 
-	{
-	_putchar(letter);
-	letter++;
-	}
-_putchar('\n');
-return (0);
+    putchar('\n');
 }
