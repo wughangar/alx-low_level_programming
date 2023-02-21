@@ -10,13 +10,13 @@ int _islower(int c);
 int main(void)
 {
 char c = 'a';
-if (test_islower(c))
+if (_islower(c))
 {
-printf("%c is lowercase\n", c);
+_putchar("%c is lowercase\n", c);
 }
 else
 {
-printf("%c is not lowercase\n", c);
+_putchar("%c is not lowercase\n", c);
 }
 return 0;
 }
