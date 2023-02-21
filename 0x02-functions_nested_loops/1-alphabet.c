@@ -1,20 +1,24 @@
 #include "main.h"
 
 /**
- * main- prints in stdout
+ * print_alphabet - prints the alphabet in lowercase
  *
- * Return: Always 0.
+ * Return: void
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
+{
+char letter = 'a';
+while (letter <= 'z')
+{
+_putchar(letter);
+letter++;
+}
+_putchar('\n');
+}
+
 int main(void)
 {
-	char letter = 'a';
-	while (letter <= 'z')
-	{
-	_putchar(letter);
-	letter++;
-	}
-_putchar('\n)
+print_alphabet();
 return (0);
 }
