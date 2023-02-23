@@ -2,6 +2,8 @@
 
 /**
  * print_line - draws a staright line
+ * @n : number of times
+ *
  */
 
 void print_line(int n)
