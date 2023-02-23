@@ -8,12 +8,11 @@
  */
 int _isupper(int c)
 {
-	char c;
-	c == 'A';
+	if (isupper(c))
 	{
 		return (1);
 	}
-	c == 'a';
+	else
 	{
 		return (0);
 	}
