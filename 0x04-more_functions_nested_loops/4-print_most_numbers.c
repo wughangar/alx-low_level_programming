@@ -5,16 +5,13 @@
  */
 void print_numbers(void)
 {
-	int ch;
+	char  c;
 
-	for (ch = '0'; ch <= '9'; ch++)
+	for (c = '0'; ch <= '9'; c++)
 	{
-		if (ch == '2' || ch == '4')
-		{
-			continue;
-		}
+		if (!(ch == '2' || ch == '4'))
 
-		_putchar(ch);
+		_putchar(c);
 	}
 
 	_putchar('\n');
