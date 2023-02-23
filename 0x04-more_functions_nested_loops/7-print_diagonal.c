@@ -2,20 +2,25 @@
 #include <stdio.h>
 
 /**
- * print_diagnol - draws a diagnol line
+ * print_diagonal - printing diagnol line
+ * @n: input variable
  */
 
 void print_diagonal(int n)
 {
-	int n;
-	int i;
+	int i, j;
+
 	if (n <= 0)
+
 	{
 		_putchar('\n');
 	}
-	for (i - 0; i < n; i++;)
+	for (i = 0; i < n; i++)
 	{
-		_putchar('\');
+		for (j = 0; j < i; j++)
+	{
+		_putchar(' ');
 	}
-	_putchar('n');
+	_putchar('\\');
+	_putchar('\n');
 }
