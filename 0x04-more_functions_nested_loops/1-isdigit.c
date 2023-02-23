@@ -5,7 +5,7 @@
  * _isdigit - check if character is number
  * @c: is the character to check
  * Return: 1 if digit otherwise 0
- */ 
+ */
 int _isdigit(int c)
 {
 	if (isdigit(c))
