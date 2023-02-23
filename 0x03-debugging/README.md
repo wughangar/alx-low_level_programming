@@ -1,2 +1,2 @@
-code or largest number
+converts a date to the day of the year
 
