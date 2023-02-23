@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <ctype.g>
+
 /**
  * _isupper - chceks if character is upper case
  * @c: character to test
