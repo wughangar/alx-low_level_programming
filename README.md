@@ -1,2 +1,2 @@
-a script that runs a C file through the preprocessor
+program to check if c is caps
 
