@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 
-/** 
+/**
  * print_array - prints the array of numbers
- * @a: the array 
+ * @a: the array
  * @n: the number of elements in a
  */
 void print_array(int *a, int n)
