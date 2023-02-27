@@ -1,19 +1,21 @@
 #include "main.h"
-#include <stdio.h>
-#include <math.h>
 
 /**
  * puts2 - prints every letter in stdout
- *@i: looping through 
+ * @str: string to print
  */
 void puts2(char *str)
 {
 	char *str;
-	int i = 0;
+	int i;
 
-	while (str(i) != '\0')
+	i = 0;
+
+	while (i < strlen(str))
 	{
-		_putchar("%c\n", i, str[i]);
-		i++;
+		_putchar(str[i]);
+		i += 2;
 	}
+
+	_putchar('\n');
 }
