@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * puts2 - prints every letter in stdout
@@ -6,12 +7,17 @@
  */
 void puts2(char *str)
 {
-	char *str;
-	int i;
+	int i, len;
 
 	i = 0;
+	len = 0;
 
-	while (i < strlen(str))
+	while (str[len] != '\0')
+	{
+		len++;
+	}
+
+	while (i < len)
 	{
 		_putchar(str[i]);
 		i += 2;
