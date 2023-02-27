@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdio.h>
+#include <math.h>
+
 /**
  * puts2 - prints every letter in stdout
  *@i: looping through 
