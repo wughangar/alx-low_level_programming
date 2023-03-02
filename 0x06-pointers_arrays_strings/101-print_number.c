@@ -16,9 +16,8 @@ void print_number(int n)
 
 	while (n / divisor > 9)
 	{
-	divisor *= 10;
+		divisor * = 10;
 	}
-
 	while (divisor != 0)
 	{
 	_putchar((n / divisor) % 10 + '0');
