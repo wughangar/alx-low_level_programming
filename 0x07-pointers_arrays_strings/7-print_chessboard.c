@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include "main.h"
+/**
+ * @i: integer 
+ * @j: integer 
+ *
+ * print_chessboard - function that prints chess board
+ */
+void print_chessboard(char (*a)[8])
+{
+	int i, j;
+
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			_putchar("%c", a[i][j]);
+		}
+		_putchar("\n");
+	}
+}
