@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * @i: integer 
- * @j: integer 
- *
+ *@a: chessboard to be printed
  * print_chessboard - function that prints chess board
  */
 void print_chessboard(char (*a)[8])
