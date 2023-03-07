@@ -6,18 +6,17 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, sum1 = 0, sum2 = 0;
+	int i, j, p, l = 0, r = 0;
 
 	for (i = 0; i < size; i++)
 	{
-		sum1 += *(a + i * size + i);
-		sum2 += *(a + i * size + (size - i - 1));
+		p = (i * size) + i;
+		l += *(a + p);
 	}
-	_putchar(sum1 / 10 + '0');
-	_putchar(sum1 % 10 + '0');
-	_putchar(',');
-	_putchar('');
-	_putchar(sum2 / 10 + '0');
-	_putchar(sum2 % 10 + '0');
-	_putchar('\n');
+	for (j = 0; j < size; j++)
+	{
+		p = (j * size) + (size - 1 - j);
+		r += *(a + p);
+	}
+	printf("%i, %i\n", l, r);
 }
