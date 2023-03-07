@@ -3,6 +3,8 @@
  * print_diagsums - prints the sum of two diagnols of a square
  * @a: the matrix to be summed
  * @size: the size of the matrix
+ *
+ * Return: void
  */
 void print_diagsums(int *a, int size)
 {
