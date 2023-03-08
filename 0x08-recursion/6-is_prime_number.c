@@ -7,7 +7,7 @@
  *
  * Return: int
  */
-int helper(inr i, int j)
+int helper(int i, int j)
 {
 	if (j < 2 || j % i == 0)
 		return (0);
