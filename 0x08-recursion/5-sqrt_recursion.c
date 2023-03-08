@@ -17,11 +17,11 @@ int helper(int j, int k)
 		return (j);
 	if (j * j > k)
 		return (-1);
-	return (helper(j + 1, k);
+	return (helper(j + 1, k));
 }
 int _sqrt_recursion(int n)
 {
 if (n == 0)
 return (0);
-return (helper(1,n);
+return (helper(1,n));
 }
