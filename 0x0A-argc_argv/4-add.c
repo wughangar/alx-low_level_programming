@@ -9,8 +9,8 @@
  */
 int main(int argc, char **argv)
 {
-	int i, j, sum = 0;
-	char *flag;
+	int sum = 0;
+	int i, j;
 
 	if (argc < 2)
 	{
@@ -18,17 +18,18 @@ int main(int argc, char **argv)
 		return (0);
 	}
 
-	for (i = 1; argv[i]; i++)
+	for (i = 1; i < argc; i++)
 	{
-		n = strtol(argv[i], &flag, 10);
-		if (*flag)
+		j = 0;
+		while (argv[i][j] != '0')
 		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			sum += n;
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			j++;
+			sum += atoi(argv[i]);
 		}
 	}
 	printf("%d\n", sum);
