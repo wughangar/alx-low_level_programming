@@ -1,33 +1,18 @@
 #include "main.h"
 #include <stdio.h>
-/**
- * _putchar - takes single character and returns an integer
- * @c: character
- *
- * Return: return an int
+/*
+ * This program prints the name of the program that is executed
  */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+
 /**
- * main - prints name of the programe followed by new line
- *@argc: the number of arguments passed to the program
- *@argv: an array of strings containing arguments passed
+ * main - Entry point for the program
+ * @argc: number of arguments passed to the program
+ * @argv: an array of strings containing the arguments passed
  *
- * Return: 0 if program runs succesfully.
+ * Return: Always 0 (sucess)
  */
 int main(int argc, char *argv[])
 {
-	int i, j;
-
-	for (i = 0; i < argc; i++)
-	{
-		for (j = 0; argv[i][j] != '\0'; j++)
-		{
-			_putchar(argv[i][j]);
-		}
-		_putchar('\n');
-	}
+	printf("%s\n", argv[0]);
 	return (0);
 }
