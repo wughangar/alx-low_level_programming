@@ -10,12 +10,13 @@
  */
 int main(int argc, char **argv)
 {
-	int, j, sum = 0;
+	int j, sum = 0;
 	int num;
 
 	for (i = 1; i < argc; i++)
 	{
-		while (argv[1][j] != '\0')
+		j = 0;
+		while (argv[i][j] != '\0')
 		{
 			if (!isdigit(argv[1][j]))
 			{
