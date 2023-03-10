@@ -9,7 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-	int i, j sum = 0;
+	int i, j, sum = 0;
 	char *flag;
 
 	if (argc < 2)
