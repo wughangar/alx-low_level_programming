@@ -25,5 +25,5 @@ int main(int argc, char **argv)
 
 	printf("%d\n", x * y);
 
-	retun(0);
+	return(0);
 }
