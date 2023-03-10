@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _putchar - takes single character and returns an integer
  * @c: character
