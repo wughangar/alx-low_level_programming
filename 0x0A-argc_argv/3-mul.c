@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+
 /**
  * main - multiplies two numbers
  * @argc: number of arguments
@@ -9,7 +11,7 @@
  */
 int main(int argc, char **argv)
 {
-	int x, y, total;
+	int x, y;
 
 
 	if (argc < 3)
@@ -20,9 +22,8 @@ int main(int argc, char **argv)
 
 	x = atoi(argv[1]);
 	y = atoi(argv[2]);
-	total = x * y;
 
-	printf("%d\n", total);
+	printf("%d\n", x * y);
 
 	retun(0);
 }
