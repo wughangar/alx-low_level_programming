@@ -2,10 +2,11 @@
 #include <stdlib.h>
 /**
  * create_array - creates an array of chars
- * @arr: array
+ * @size: unsigned int
+ * @c: initial char
  *
  * Return: NULL if size is 0.
- */ 
+ */
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
