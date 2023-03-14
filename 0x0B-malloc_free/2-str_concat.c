@@ -29,11 +29,9 @@ char *str_concat(char *s1, char *s2)
 	if (new_str == NULL)
 		return (NULL);
 
-	for (i = 0; i < len1;)
-		i++;
+	for (i = 0; i < len1; i++)
 	new_str[i] = s1[1];
-	for (i = 0; i <= len2;)
-		i++;
+	for (i = 0; i <= len2; i++)
 	new_str[len1 + i] = s2[i];
 
 	return (new_str);
