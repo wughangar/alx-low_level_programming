@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
  * main - prints file name
  *
@@ -6,6 +8,13 @@
  */
 int main(void)
 {
-	printf("compiled from file: %s\n", __FILE__);
-	return (0);
+int i = 0;
+
+while (__FILE__[i] != '\0')
+{
+	_putchar(__FILE__[i]);
+	i++;
+}
+_putchar('\n');
+return (0);
 }
