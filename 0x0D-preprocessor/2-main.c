@@ -1,17 +1,11 @@
-#include "holberton.h"
+#include <stdio.h>
+
 /**
- * main - prints file name
+ * print_filename - prints file name
  *
  * Return: 0.
  */
 void print_filename(void)
 {
-	char *filename = __FILE__;
-	int i;
-
-	for (i = 0; filename[i] != '\0'; i++)
-	{
-		_putchar(filename[i]);
-	}
-	_putchar('\n');
+printf("%s\n", __FILE__);
 }
