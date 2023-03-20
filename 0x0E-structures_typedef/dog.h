@@ -8,7 +8,7 @@
  *
  */
 
-typedef struct dog dog_t
+typedef struct dog
 {
 	char *name;
 	float age;
