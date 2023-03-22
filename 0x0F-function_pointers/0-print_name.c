@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-
+#include <stddef.h>
 /**
  * print_name - prints a name
  * @name: name to print
@@ -8,9 +8,9 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	int i = 0;
+	int i;
 
-	for (name[i] != '\0'; i++)
+	for (i = 0; name[i] != '\0'; i++)
 	{
 		f(&name[i]);
 	}
