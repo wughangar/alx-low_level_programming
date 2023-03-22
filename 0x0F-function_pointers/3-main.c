@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
+#include "function_pointers.h"
 
 /**
  * main - Entry point.
@@ -12,7 +13,7 @@
 int main(int argc, char **argv)
 {
 	int num1, num2, result;
-	int (*op_func)(int, int)
+	int (*op_func)(int, int);
 
 		if (argc != 4)
 		{
@@ -24,13 +25,13 @@ int main(int argc, char **argv)
 	num2 = atoi(argv[3]);
 	op_func = get_op_func(argv[2]);
 
-	if (!0p_func)
+	if (!op_func)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 	result = op_func(num1, num2);
-	printf("%d\n, reuslt);
+	printf("%d\n", result);
 
 	return (0);
 }
