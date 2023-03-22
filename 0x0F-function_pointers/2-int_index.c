@@ -1,9 +1,9 @@
 #include "function_pointers.h"
 /**
  * int_index - searcges for an integer in an array
- * @arrya: the arrya to be searched
+ * @array: the arrya to be searched
  * @size: the size of the array
- * @cmp: a pointer to a function to use to compare values 
+ * @cmp: a pointer to a function to use to compare values
  *
  * Return: 0.
  */
