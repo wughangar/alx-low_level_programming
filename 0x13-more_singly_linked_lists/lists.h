@@ -7,7 +7,7 @@
  * @n: int
  * @next: leads to next node
  */
-typedef struct listit_s
+typedef struct listint_s
 {
 	int n;
 	struct listint_s *next;
