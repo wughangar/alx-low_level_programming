@@ -4,7 +4,7 @@
 
 /**
  * add_nodeint - adds a new node at the beginning of the list
- * @head: pointer to a pointer 
+ * @head: pointer to a pointer
  * @n: constant int
  *
  * Return: address to new element
