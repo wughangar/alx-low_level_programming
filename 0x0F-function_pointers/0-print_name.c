@@ -6,15 +6,12 @@
  * @f: a pointer to a function that prints a single character
  *
  */
-void _putchar(char c)
-{
-	putchar(c);
-}
 void print_name(char *name, void (*f)(char *))
 {
-	while (*name != '\0')
+	int i;
+
+	for (i = 0; name[i] != '\0'; i++)
 	{
-		f(*name++);
+		f(&name[i]);
 	}
-	f('n');
 }
