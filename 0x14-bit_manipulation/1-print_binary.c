@@ -8,11 +8,11 @@
  */
 void print_binary(unsigned long int n)
 {
+	int size_t = sizeof(unsigned long int) * 8;
+	unsigned long int x = 1 << (size_t - 1);
 	int i;
-	unsigned long int x = 1 << (size - 1);
-	int size = sizeof(unsigned long int) * 8;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < size_t; i++)
 	{
 		if ((n & x) == 0)
 		{
