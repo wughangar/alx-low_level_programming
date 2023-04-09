@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 
 
 	x = 1UL << (bite - 1);
-	
+
 	for (i = 0; i < bite; i++)
 	{
 		if (n & x)
