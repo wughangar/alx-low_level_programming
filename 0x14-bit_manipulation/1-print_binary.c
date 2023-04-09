@@ -10,20 +10,17 @@ void print_binary(unsigned long int n)
 {
 	int i;
 	unsigned long int x;
-	int size_t = sizeof(unsigned long int) * 8;
+	size_t bite = sizeof(unsigned long int) * 8;
 
-	x = 1 << (size_t - 1);
 
-	for (i = 0; i < size_t; i++)
+	x = 1UL << bite;
 	{
-		if ((n & x) == 0)
-		{
-			putchar('0');
-		}
-		else
-		{
+	for (i = 0; i < bite; i++)
+		if (n & x)
 			putchar('1');
-		}
+		else
+			putchar('0');
 		x >>= 1;
 	}
 }
+
