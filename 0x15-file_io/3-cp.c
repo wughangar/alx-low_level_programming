@@ -54,7 +54,7 @@ void cp(int argc, char *argv[])
 		exit(99);
 	}
 
-	while ((rbyte = read(d_from, buffer, sizeof(total))) > 0)
+	while ((rbyte = read(d_from, buffer, sizeof(buffer))) > 0)
 	{
 		wbyte = write(d_to, buffer, rbyte);
 		if (wbyte == -1)
