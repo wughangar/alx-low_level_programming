@@ -30,7 +30,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (1);
 	}
 
-	if (access(filename, F_OK | W_OK) == -1)
+	if (access(filename, W_OK) == -1)
 	{
 		return (-1);
 	}
@@ -40,7 +40,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	len = sizeof(text_content);
+	len = strlen(text_content);
 	wbytes = write(d, text_content, len);
 	if (wbytes == -1)
 	{
