@@ -6,12 +6,15 @@
  * @n: unsigned long int
  * @m: unssigned long int
  *
+ * Return: return value stored in y
  */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int y = 0;
-	unsigned long int res = n ^ m;
+	unsigned long int res;
+
+	res = n ^ m;
 
 	while (res)
 	{
