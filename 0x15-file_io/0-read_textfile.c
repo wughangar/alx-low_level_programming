@@ -18,6 +18,7 @@ size_t read_textfile(const char *filename, size_t letters)
 	int y;
 	char *temp;
 	size_t byt_wrote;
+	size_t byte_read;
 
 	x = letters * sizeof(char);
 
@@ -32,6 +33,17 @@ size_t read_textfile(const char *filename, size_t letters)
 	}
 
 	temp = malloc(x);
+	if (temp == NULL)
+	{
+		return (0);
+	}
+	byte_read = read(y, temp, letters);
+	if (byte_read == -1)
+	{
+		free(temp);
+		close(y);
+		return (0);
+	}
 
 	byt_wrote = write(y, temp, x);
 
