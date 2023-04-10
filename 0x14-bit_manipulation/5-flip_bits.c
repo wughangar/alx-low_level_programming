@@ -6,7 +6,7 @@
  * @n: unsigned long int
  * @m: unssigned long int
  *
- * Return: return value stored in y
+ * Return: number of bytes that need to flip
  */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
