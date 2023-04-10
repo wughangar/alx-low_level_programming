@@ -14,10 +14,8 @@
  */
 size_t read_textfile(const char *filename, size_t letters)
 {
-	int len;
 	int d;
 	size_t rbyte;
-	size_t wbyte;
 	char *temp;
 
 	if (filename == NULL)
@@ -25,29 +23,31 @@ size_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	len = letters * (sizeof(char));
 
 	d = open(filename, O_RDONLY);
 	if (d == -1)
 	{
 		return (0);
 	}
-	temp = malloc(len);
+	temp = malloc(latters + 1);
 	if (temp == NULL)
 	{
 		return (0);
 	}
 
-	rbyte = read(d, temp, len);
+	rbyte = read(d, temp, letters);
 	if (rbyte == (size_t) -1)
 	{
 		return (0);
 	}
 
-	wbyte = write(d, temp, len);
-	if (wbyte == (size_t) -1)
+	temp[rbyte] = '\0';
+
+	if (write(STD_FILENO, TEMP, rbyte) == -1)
 	{
-		return (0);
+	free(temp);
+	close(d);
+	return (0);
 	}
 	free(temp);
 	close(d);
