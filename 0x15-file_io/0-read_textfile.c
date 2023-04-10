@@ -45,7 +45,7 @@ size_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	byt_wrote = write(y, temp, x);
+	byt_wrote = write(STDOUT_FILENO, temp, byte_read);
 
 	if (byt_wrote == (size_t)-1)
 	{
