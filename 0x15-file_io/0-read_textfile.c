@@ -6,9 +6,9 @@
 #include <stddef.h>
 
 /**
- * read_textfile - function that reads a text file and prints it 
- * @filename: pointer to file 
- * @letter: size 
+ * read_textfile - function that reads a text file and prints it
+ * @filename: pointer to file
+ * @letters: number of letter in filename
  *
  * Return: 0 if it fails.
  */
@@ -45,4 +45,3 @@ size_t read_textfile(const char *filename, size_t letters)
 
 	return (byt_wrote);
 }
-	
