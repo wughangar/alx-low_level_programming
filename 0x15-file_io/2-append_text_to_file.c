@@ -9,7 +9,7 @@
 
 /**
  * append_text_to_file - function that appends text at the end of a file
- * @filename: pointer to the file 
+ * @filename: pointer to the file
  * @text_content: string to be appended
  *
  * Return: 1 on sucess and -1 if not
@@ -51,5 +51,5 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 	}
 	close(d);
-	return(1);
+	return (1);
 }
