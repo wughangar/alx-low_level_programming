@@ -1,2 +1,2 @@
-script for processor
+C- pointers, arrays and strings project.
 
