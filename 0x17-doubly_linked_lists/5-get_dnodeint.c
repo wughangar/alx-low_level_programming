@@ -5,7 +5,7 @@
 
 /**
  * get_dnodeint_at_index - returns node at nth position of dlistint_t
- * @head: pointer to head of the node 
+ * @head: pointer to head of the node
  * @index: index of the node
  *
  * Return: NULL if node doesnt exist
