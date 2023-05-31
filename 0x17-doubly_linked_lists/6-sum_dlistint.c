@@ -5,7 +5,7 @@
 
 /**
  * sum_dlistint - function that returns the sum of all the dats in linked list
- * @head: pointer to head node 
+ * @head: pointer to head node
  *
  * Return: 0 if list is empty
  */
