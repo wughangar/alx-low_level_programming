@@ -14,7 +14,7 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int index = hash_djb2((const unsigned char *)key) % ht->size;
+	unsigned long int index = key_index((const unsigned char *)key) % ht->size;
 	hash_node_t *nnode = NULL;
 	hash_node_t *tmp = NULL;
 
@@ -23,13 +23,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 
+
 	tmp = ht->array[index];
-	while (tmp != NULL)
+	while (tmp != NULL) //finding and handling collisions- chaining colission strategy
 	{
 		if (strcmp(tmp->key, key) == 0)
 		{
 			free(tmp->value);
 			tmp->value = strdup(value);
+			if (tmp->value == NULL)
+				return (0);
 			return (1);
 		}
 		tmp = tmp->next;
@@ -41,6 +44,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	nnode->key = strdup(key);
 	nnode->value = strdup(value);
+	if (nnode->key == NULL || nnode->value == NULL) //handling memeory alloc fail
+	{
+		free(nnode->key);
+		free(nnode->value);
+		free(nnode);
+		return (0);
+	}
 	nnode->next = ht->array[index];
 	ht->array[index] = nnode;
 
