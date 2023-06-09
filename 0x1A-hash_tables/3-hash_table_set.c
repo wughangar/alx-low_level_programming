@@ -25,7 +25,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 
 	tmp = ht->array[index];
-	while (tmp != NULL) //finding and handling collisions- chaining colission strategy
+	while (tmp != NULL)
 	{
 		if (strcmp(tmp->key, key) == 0)
 		{
@@ -44,7 +44,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	nnode->key = strdup(key);
 	nnode->value = strdup(value);
-	if (nnode->key == NULL || nnode->value == NULL) //handling memeory alloc fail
+	if (nnode->key == NULL || nnode->value == NULL)
 	{
 		free(nnode->key);
 		free(nnode->value);
