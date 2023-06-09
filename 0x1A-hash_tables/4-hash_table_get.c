@@ -5,10 +5,10 @@
 
 /**
  * hash_table_get - retrives value asociated with a key
- * @ht: hash table 
+ * @ht: hash table
  * @key: key im looking for
  *
- * Returns: value or NULL if key cant be found
+ * Return: value or NULL if key cant be found
  */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
