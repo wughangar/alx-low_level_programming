@@ -22,7 +22,7 @@ void hash_table_print(const hash_table_t *ht)
 	for (i = 0; i < ht->size; i++)
 	{
 		nnode = ht->array[i];
-		while (node != NULL)
+		while (nnode != NULL)
 		{
 			if (flag == 1)
 				printf(", ");
