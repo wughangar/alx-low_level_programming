@@ -2,5 +2,5 @@ CC = gcc
 SRC = school.c main.c
 NAME = school
 OBJ = $(SRC:.c=.o)
-all: $(NAME)
+all: $(OBJ)
 	$(CC) $(OBJ)  -o $(NAME)
