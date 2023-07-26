@@ -5,7 +5,8 @@ NAME = school
 RM = rm -f
 OBJ = $(SRC:.c=.o)
 
-all: $(OBJ)
+all: $(NAME)
+	$(NAME): $(OBJ)
 	$(CC) $(OBJ)  -o $(NAME) $(CFLAGS)
 clean:
 	$(RM) $(NAME) *~ .*~
@@ -14,3 +15,8 @@ oclean:
 fclean: clean oclean
 re: fclean all
 
+.PHONY: all clean fclean re oclean
+
+ifndef $(wildcard m.h)
+$(error m.h not found)
+endif
