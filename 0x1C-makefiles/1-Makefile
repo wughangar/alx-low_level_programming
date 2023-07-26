@@ -1,4 +1,4 @@
 CC = gcc
 SRC = *.c
 all:
-	CC -c SRC -o school
+	CC  SRC -o school
